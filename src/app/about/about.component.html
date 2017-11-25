@@ -1,0 +1,11 @@
+<p>
+  about works!
+</p>
+
+<p><a href="" (click)="sendMeHome()">Back at Home</a></p>
+
+<ul [@goals]="goals.length">
+    <li *ngFor="let goal of goals; let i = index" (click)="removeGoal(i)">
+      {{goal}}
+    </li>
+</ul>
